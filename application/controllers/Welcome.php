@@ -67,7 +67,10 @@ class Welcome extends Application {
         $this->data['type'] = $order->orderType;
        
         $this->data['burgers'] = $order->burgers;
+        $this->data['orderCost'] = $order->orderTotal;
         
+        $this->data['orderInstructions'] = $order->orderInstructions;
+         
 	// Present the list to choose from
 	$this->data['pagebody'] = 'justone';
 	$this->render();

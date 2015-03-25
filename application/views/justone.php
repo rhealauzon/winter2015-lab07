@@ -1,7 +1,11 @@
 <div class="row">
-    <p>
+    <h3>
         {filename} for {customer} ({type})
-    </p>
+    </h3>
+    
+    <h5>
+        Order Instructions: {orderInstructions} <br/>
+    </h5>
     <p>
         {burgers}
             <br />
@@ -10,12 +14,13 @@
             Cheese: {cheese}  <br/>
             Toppings: {toppings} <br/>
             Sauce: {sauces} <br/>
-            Burger total: ${burger-total} <br/>            
+            Burger total: ${burgerCost} <br/>     
+            <br/> Special Burger Instructions: {instructions} <br/>
         {/burgers}
     </p>
     
     <p style="font-weight:bold;">
-        Order Total: $ {order-total} <br/>
+        Order Total: $ {orderCost} <br/>
     </p>
     
 </div>
